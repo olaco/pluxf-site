@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,400');
+
+
+
+#title{
+  background-color: rgb(238, 238, 68);
+}
+
+h2{
+font-family: "Montserrat-Light";
+
+}
+
+h4{
+  font-family: "Montserrat-Bold";
+  font-weight: bolder
+}
+
+
+
+p{
+  font-family: 'Montserrat-Black';
+  word-spacing: 1.3;
+  color: #a1a1a1
+
+}
+
+
+
+.nav-link{
+  font-family: "Montserrat-Light";
+  font-size: 1.2rem;
+  color: #fff! important;
+}
+
+
+.image-title{
+width: 40%;
+height: 95%;
+transform: rotate(-2deg)
+
+}
+
+
+/* features */
+/* centering feature text */
+#features{
+  text-align: center;
+  padding: 5%
+}
+
+.icon{
+  color:  rgb(155, 160, 86)
+}
+
+.icon:hover{
+  color: #ececec;
+}
