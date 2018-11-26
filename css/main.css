@@ -3,7 +3,7 @@
 
 
 #title{
-  background-color: rgb(238, 238, 68);
+  background-color: #d1c9c9;
 }
 
 h2{
@@ -25,12 +25,14 @@ p{
 
 }
 
-
+#brand-name{
+  color: rgb(122, 121, 107)! important;
+}
 
 .nav-link{
   font-family: "Montserrat-Light";
   font-size: 1.2rem;
-  color: #fff! important;
+  color: rgb(122, 121, 107)! important;
 }
 
 
@@ -55,4 +57,26 @@ transform: rotate(-2deg)
 
 .icon:hover{
   color: #ececec;
+}
+
+
+
+
+/* ============ Testmonials  ==================== */
+.bg-testimonial{
+  background-color: #a7a4a4;
+  border-radius: 20px;
+
+}
+
+.testimoial{
+  text-align: center;
+ 
+  /* centering */
+  padding: 5%;
+  color: #fff;
+}
+
+.testimoial img{
+  border-radius: 50%
 }
