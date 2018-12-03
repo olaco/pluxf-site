@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/bootstrap.min.js">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>Hello, world!</title>
   </head>
@@ -15,16 +17,19 @@
   <body>
       
 <!-- dedeted the id" title"" -->
-    <section id="">
+    <section id="top-box">
             <div class="container">
-                    <nav class="navbar navbar-expand-lg navbar-dark ">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
     
 
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
+                              <span id="mbrurger" class="navbar-toggler-icon"></span>
                             </button>
                           
-                            <a id="brand-name" href="" class="navbar-brand">Plumax</a>
+                            <a id="brand-name" href="" class="navbar-brand">
+                               <img src="./asset/Untitled-1.png" alt="" width="150px">
+
+                            </a>
                                 
                                 
                                 
@@ -32,14 +37,14 @@
                                     
                                     <ul class="navbar-nav ml-auto">
                               <li class="nav-item dropdown">
-                                  <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown">Contact</a>
+                                  <a href="#" class="nav-link " id="navbarDropdown" role="button" data-toggle="dropdown">Testimonials</a>
                           
-                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                       <a class="dropdown-item" href="#">Action</a>
                                       <a class="dropdown-item" href="#">Another action</a>
                                       <div class="dropdown-divider"></div>
                                       <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
+                                    </div> -->
                                   
                               </li>
                               
@@ -63,12 +68,18 @@
                           </nav>
                           
                           <div class="row ">
-                              <div class="col-md-6">
-                                 
-                                  <h2>Best Style Fit.</h2>
+                              <div class="col-md-6 top-text"> 
+                                  <div class="top-text2">
+
+                                    <h1>Best Style Fit.</h1>
                                   <p>Where Girls Rule</p>
-                                 <button class="btn btn-dark btn-sm mr-2"><i class="fas fa-desktop"> &nbsp;</i>Get It</button>
-                                 <button class="btn btn-outline btn-sm">Details</button>
+                                  <button class="btn btn-dark btn-sm mr-2"><i class="fas fa-desktop"> &nbsp;</i>Get It</button>
+                                  <button class="btn btn-outline btn-sm">Details</button>
+
+
+                                  </div>
+                                 
+                                  
                               </div>
                                   <div class="col-md-6 img ">
                                       <img src="./asset/girlsk3.jpg " class="image-title"  alt="Girls Fashion" > 
@@ -90,7 +101,7 @@
         <div class="row">
             <div id="features" class="col-md-4" ><i class="far fa-thumbs-up fa-2x icon"></i><br><h4>Customer Satisfaction</h4> <p>Guarantee to go all the way for a job well done. </p></div>
             <div id="features" class="col-md-4"><i class="fa fa-stopwatch fa-2x icon" ></i><br><h4>Prompt finishing</h4> <p>Committment to timely exectution of client jobs</p></div>
-            <div id="features" class="col-md-4"><i class="fas fa-hands-helping fa-2x icon"></i><h4>Professional Advise</h4> <p>Free tips and choice to help make better fashion calls</p></div>
+            <div id="features" class="col-md-4"><i class="fas fa-hands-helping fa-2x icon"></i><br><h4>Professional Advice</h4> <p>Free tips and choice to help make better fashion calls</p></div>
 
 
         </div>
@@ -102,19 +113,212 @@
     </div>
 
 
-    <div class="container bg-testimonial">
+    <div class="container">
         <div class="row">
+            <div class="col-xm-10 col-sm-10 col-md-10">
 
-            <!-- testimonial -->
-        <section class="testimoial ">
-                <h4>"I LOVE THE Dresses, they are probably the best dress my baby has ever had. I'll be making more colors when I have some extra cash."</h4>
-                <img src="./asset/16.jpg" alt="">
-                <em>Bolutife, Lagos</em>
+
+                <!-- testimonial -->
+            <!-- carousel -->
+        <section class="testimoial bg-testimonial " id="tm-wrapper">
+
+                <div id="testimonialcarousel" class="carousel slide" data-ride="true" data-keyboard="true" data-pause="hover">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                                <h4>"I LOVE THE Dresses, they are probably the best dress my baby has ever had. "</h4>
+                                <img src="./asset/16.jpg" alt="">
+                                <em>Bolutife, Lagos</em>
+                          </div>
+                          <div class="carousel-item">
+                                <h4>"LOVE THE Dresses, they are probably the best dress my girls have ever had."</h4>
+                                <img class="img2" src="./asset/WhatsApp Image 2018-04-03 at 06.08.40.jpeg" alt="imaes">
+                                <em>IBK, Lagos</em>
+                          </div>
+                          
+                        </div>
+                        <!-- slide control -->
+                        <a class="carousel-control-prev" href="#testimonialcarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" ></span>
+                                
+                              </a>
+                              <a class="carousel-control-next" href="#testimonialcarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" ></span>
+                                
+                              </a>
+                      </div>
+    
+                
     
                 
             </section>
+
+
+
+            </div>
+
+            
+
+
+
+
         </div>
     </div>
+
+    <!-- pricing --> 
+
+    <section class="container " id="pricing">
+       <div id="post-card"> <h2>A Plan For Every Girl</h2>
+        <p>Affordable price plans for your baby girl</p> </div>
+        
+
+        <div class="row">
+            <div class="pricing-column col-lg-4">
+
+                    <div class="card">
+    
+                            <div class="card-header" id="post-card">
+                                <h3>Ball Gown</h3>
+                                
+                            </div>
+                            
+                            
+                            <div class="card-body" id="post-card">
+                                    <h3>#6,500</h3>
+                                    <p>Plus a customized handbag to match</p>
+                                    <button type="button" class="btn btn-outline-dark btn-block"> Order Now</button>  
+                            </div>
+                            
+                            
+                        </div>
+
+            </div>
+
+            <div class="pricing-column col-lg-4">
+
+                    <div class="card">
+    
+                            <div class="card-header" id="post-card">
+                                <h2>Jump Suit</h2>
+                                
+                            </div>
+                            
+                            
+                            <div class="card-body" id="post-card">
+                                <h3>#3,500</h3>
+                                <p>Plus a customized bag to match</p>
+                                <button type="button" class="btn btn-outline-dark btn-block"> Order Now</button>
+                                
+                            </div>
+                            
+                            
+                        </div>
+            </div>
+
+
+
+            <div class="pricing-column col-lg-4">
+
+                    <div class="card">
+    
+                            <div class="card-header" id="post-card">
+                                <h2>Jump Suit</h2>
+                                
+                            </div>
+                            
+                            
+                            <div class="card-body" id="post-card">
+                                <h3>#3,500</h3>
+                                <p>Plus a customized bag to match</p>
+                                <button type="button" class="btn btn-outline-dark btn-block"> Order Now</button>
+                                
+                            </div>
+                            
+                            
+                        </div>
+            </div>
+        
+
+
+                </div>
+
+
+
+
+    </section>
+
+    <!-- footer -->
+
+
+    <section class="container">
+        <footer class="footer">
+            <div class="row">
+                <div class="wrap-footer col-lg-4">
+                    
+                        <h5>Contacts</h5>
+                        <dl class="contact-list">
+                          <dt>Address:</dt>
+                          <dd>798 South Park Avenue, Jaipur, Raj</dd>
+                        </dl>
+                        <dl class="contact-list">
+                          <dt>email:</dt>
+                          <dd><a href="mailto:#">dkstudioin@gmail.com</a></dd>
+                        </dl>
+                        <dl class="contact-list">
+                          <dt>phones:</dt>
+                          <dd><a href="tel:#">+91 7568543012</a> <span>or</span> <a href="tel:#">+91 9571195353</a>
+                          </dd>
+                        </dl>
+
+
+
+                </div>
+
+                <div class="wrap-footer col-lg-4">
+
+                        <h5>Links</h5>
+                        <ul class="nav-list">
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Projects</a></li>
+                          <li><a href="#">Blog</a></li>
+                          
+                        </ul>
+                       
+
+                    
+                    </div>
+
+                    <div class="wrap-footer col-lg-4">
+
+                           <h5>Keep In Touch</h5>
+                           <span><i class="fab fa-facebook-square fa-3x"></i> &nbsp; <i class="fab fa-instagram fa-3x"></i> &nbsp;<i class="fab fa-pinterest-p fa-3x"></i></span>
+
+                    
+                        </div>
+
+                          <div class="col-lg-12">
+
+                                <div class="copy">
+                                        <p>&copy;Plumax 2018. All Right Reserved</p>
+                                      </div>
+
+
+                          </div>
+                        
+
+
+
+            </div>
+
+
+        </footer>
+
+
+    </section>
+
+
+    
+    
+    
 
 
     
