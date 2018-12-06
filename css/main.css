@@ -172,8 +172,24 @@ ul li a{
 
 
 
+.tel{
+  color: #fff;
+  text-decoration: none!important;
+  font-family: 'Montserrat-Bold';
+}
+
+.tel:hover{
+color: darkgrey
+
+}
+
+
+
 .wrap-footer{
   text-align: center;
+  background-color: #343a40;
+  color: #fff;
+  padding: 14px;
 }
 
 .copy{
